@@ -40,8 +40,6 @@ The first chapter of the book "The C Programming Language" by Brian Kernighan an
 
 ## Programs are Translated by Other Programs into Different Forms
 
-### Topics
-
 - The steps of compilation
   - Preprocessing
   - Compilation
@@ -68,3 +66,35 @@ gcc -c hello.s -o hello.o
 # Linking: Generate hello (executable)
 gcc hello.o -o hello
 ```
+
+## Reasons to understand how compilation works
+
+The main takeway from this section is to understand why and how knowledge of the compilation process is important
+
+- **Optimization of program performance**
+- **Understanding linking errors**
+- **Avoiding security holes**
+
+## Communication between the CPU and Memory
+
+- Hardware organization of a system
+  - Buses
+    - Word size
+  - I/O devices
+  - Main memory
+  - CPU
+    - Register
+    - Program Counter (PC)
+    - Instruction Set Architecture (ISA)
+
+- Cache and the memory hierarchy
+
+## Operating System Concepts
+
+- Layered view
+
+- Abstraction Hyerarchy
+  - Processes
+  - Virtual Memory
+    - Virtual address space layout
+  - Files
