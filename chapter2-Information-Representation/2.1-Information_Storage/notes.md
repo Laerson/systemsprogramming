@@ -64,3 +64,11 @@ It is important to keep in mind that most systems are little-endian, because whe
 - Each character is represented in some form of standard encoding (ASCII, UTF-8, etc).
 
 Try yourself: Run the show_bytes function passing the string "12345" and size 6 (remember that the string is the array ['1', '2', '3', '4', '5', '\0'], so it has 6 elements), and check the output.
+
+## Representing Code
+
+- Machine code is represented as a sequence of bytes.
+- The bytes are the instructions that the CPU executes.
+- The combination of Operating System and CPU architecture determines the format of the machine code.
+  - The reason why CPU architecture alone does not determine the machine code is because not only the toolchain to generate the machine code will be different, but also different operating systems have different system calls and different ways to interact with the hardware, that will have different machine code.
+  - Also, some encoding conventions can be different between different operating systems, even if they are running on the same CPU architecture.
