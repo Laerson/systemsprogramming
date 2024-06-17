@@ -39,3 +39,21 @@ Practise problems 2.1~2.4 should work as a revision of the concepts.
 |uintN_t (uint8_t, uint16_t, uint32_t, uint64_t)|N bytes|N bytes|N bytes|
 | size_t           | 8 bytes               | 4 bytes               |                  |
 | char *           | 8 bytes               | 4 bytes               |                  |
+
+Most types can be signed or unsigned. Signed types (default) are integers that can represent both positive and negative numbers. Unsigned types can only represent non-negative numbers.
+
+Signed and unsigned types have different representations in memory, signed types usually use the two's complement representation.
+
+## Ordering of Bytes
+
+- The ordering of bytes in memory is called endianness.
+- Big-endian: Most significant byte stored at the smallest address.
+- Little-endian: Least significant byte stored at the smallest address.
+
+Most modern systems are little-endian. There are some CPUs that can be configured to be either big-endian or little-endian, however the operating system dictates the endianness of the system.
+
+There are a few rare systems that are big-endian, like the IBM z/Architecture, and machines from Oracle/Sun Microsystem.
+
+It is important to keep in mind that most systems are little-endian, because when visualizing text representations of memory, the bytes will be shown in reverse order
+
+**IMPORTANT**: Reverse bytes don't mean reverse bits. For example, the 32-bit integer 0x12345678 is stored as 0x78 0x56 0x34 0x12 in little-endian systems and as 0x12 0x34 0x56 0x78 in big-endian systems.
