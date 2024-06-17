@@ -72,3 +72,17 @@ Try yourself: Run the show_bytes function passing the string "12345" and size 6 
 - The combination of Operating System and CPU architecture determines the format of the machine code.
   - The reason why CPU architecture alone does not determine the machine code is because not only the toolchain to generate the machine code will be different, but also different operating systems have different system calls and different ways to interact with the hardware, that will have different machine code.
   - Also, some encoding conventions can be different between different operating systems, even if they are running on the same CPU architecture.
+
+## Boolean Algebra and Bit-Level Operations in C
+
+I'm skipping this section because the student should be already familiar with boolean algebra at this point.
+
+Some points that maybe are worth mentioning:
+
+1. Using bit vectors to represent sets.
+2. The concepts of abstract algebra, in particular the concept of what is a *Boolean ring*.
+3. That the **xor** operation is the same as the **addition** operation in a Boolean ring, and it has a additive inverse, which is itself. (which can be used to implement inplace swapping of two variables without using a temporary variable).
+4. Practice Problem 2.11 is worth trying, it is an easy debugging exercise.
+5. How to use bitwise operations in C.
+6. The concept of *masking* and *setting* bits (The problem 2.12 and 2.13 are good exercises for this)
+
