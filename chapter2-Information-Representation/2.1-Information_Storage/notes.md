@@ -57,3 +57,10 @@ There are a few rare systems that are big-endian, like the IBM z/Architecture, a
 It is important to keep in mind that most systems are little-endian, because when visualizing text representations of memory, the bytes will be shown in reverse order
 
 **IMPORTANT**: Reverse bytes don't mean reverse bits. For example, the 32-bit integer 0x12345678 is stored as 0x78 0x56 0x34 0x12 in little-endian systems and as 0x12 0x34 0x56 0x78 in big-endian systems.
+
+## Representing Strings
+
+- Strings in C are represented as an array of characters terminated by a null character (that has value 0).
+- Each character is represented in some form of standard encoding (ASCII, UTF-8, etc).
+
+Try yourself: Run the show_bytes function passing the string "12345" and size 6 (remember that the string is the array ['1', '2', '3', '4', '5', '\0'], so it has 6 elements), and check the output.
