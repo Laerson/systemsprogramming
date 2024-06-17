@@ -86,3 +86,10 @@ Some points that maybe are worth mentioning:
 5. How to use bitwise operations in C.
 6. The concept of *masking* and *setting* bits (The problem 2.12 and 2.13 are good exercises for this)
 
+## Shift Operations in C
+
+- Shift operations are used to multiply or divide by powers of 2.
+- The left shift operator `<<` shifts the bits to the left, filling the rightmost bits with zeros.
+- The right shift operator `>>` shifts the bits to the right, filling the leftmost bits with zeros if the number is unsigned, and with the sign bit if the number is signed.
+- The right shift operator `>>` is an arithmetic shift if the number is signed, and a logical shift if the number is unsigned.
+- Shifts by a number of bits greater than the word size are undefined behavior in C.
